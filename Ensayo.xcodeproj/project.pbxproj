@@ -17,6 +17,7 @@
 		9D69AE571857760E00A5BED0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D69AE551857760E00A5BED0 /* Main.storyboard */; };
 		9D69AE5C1857760E00A5BED0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D69AE5B1857760E00A5BED0 /* Images.xcassets */; };
 		9D69AE7B185777C500A5BED0 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D69AE7A185777C500A5BED0 /* ListViewController.m */; };
+		9D69AE7F18577A2E00A5BED0 /* UIColor+ApplicationColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D69AE7E18577A2E00A5BED0 /* UIColor+ApplicationColors.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		9D69AE621857760E00A5BED0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9D69AE79185777C500A5BED0 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		9D69AE7A185777C500A5BED0 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		9D69AE7D18577A2E00A5BED0 /* UIColor+ApplicationColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ApplicationColors.h"; sourceTree = "<group>"; };
+		9D69AE7E18577A2E00A5BED0 /* UIColor+ApplicationColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ApplicationColors.m"; sourceTree = "<group>"; };
 		A484E52C26BC4D0AA7C1B94B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -92,6 +95,7 @@
 				9D69AE551857760E00A5BED0 /* Main.storyboard */,
 				9D69AE5B1857760E00A5BED0 /* Images.xcassets */,
 				9D69AE78185777B700A5BED0 /* Controllers */,
+				9D69AE7C18577A1D00A5BED0 /* Categories */,
 				9D69AE4A1857760E00A5BED0 /* Supporting Files */,
 			);
 			path = Ensayo;
@@ -115,6 +119,15 @@
 				9D69AE7A185777C500A5BED0 /* ListViewController.m */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9D69AE7C18577A1D00A5BED0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9D69AE7D18577A2E00A5BED0 /* UIColor+ApplicationColors.h */,
+				9D69AE7E18577A2E00A5BED0 /* UIColor+ApplicationColors.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D69AE7F18577A2E00A5BED0 /* UIColor+ApplicationColors.m in Sources */,
 				9D69AE541857760E00A5BED0 /* AppDelegate.m in Sources */,
 				9D69AE501857760E00A5BED0 /* main.m in Sources */,
 				9D69AE7B185777C500A5BED0 /* ListViewController.m in Sources */,

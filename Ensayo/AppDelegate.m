@@ -11,7 +11,16 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [self initAppearance];
+    
     return YES;
+}
+
+- (void)initAppearance {
+    // Navigation bar
+    [[UINavigationBar appearance] setBarTintColor:[UIColor ensayoBlueColor]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor whiteColor], NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue-CondensedBlack" size:25.0] }];
 }
 
 @end

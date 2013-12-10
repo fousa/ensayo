@@ -19,9 +19,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.tableView.separatorColor = [UIColor ensayoGreenColor];
 
     _list = @{}.mutableCopy;
     _list[NSLocalizedString(@"Placeholders", @"Placeholders")] = @"PlaceholderViewController";
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    self.title = [NSLocalizedString(@"Ensayo", @"Ensayo") uppercaseString];
 }
 
 #pragma mark - List
