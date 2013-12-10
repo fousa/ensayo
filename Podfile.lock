@@ -1,0 +1,10 @@
+PODS:
+  - coby (0.0.1)
+
+DEPENDENCIES:
+  - coby (~> 0.0.1)
+
+SPEC CHECKSUMS:
+  coby: 03f5b37b39b21156dd201d28cfbe05c2aa7d2226
+
+COCOAPODS: 0.28.0
