@@ -92,8 +92,7 @@
 			children = (
 				9D69AE521857760E00A5BED0 /* AppDelegate.h */,
 				9D69AE531857760E00A5BED0 /* AppDelegate.m */,
-				9D69AE551857760E00A5BED0 /* Main.storyboard */,
-				9D69AE5B1857760E00A5BED0 /* Images.xcassets */,
+				9D69AE8018577DC800A5BED0 /* UI */,
 				9D69AE78185777B700A5BED0 /* Controllers */,
 				9D69AE7C18577A1D00A5BED0 /* Categories */,
 				9D69AE4A1857760E00A5BED0 /* Supporting Files */,
@@ -128,6 +127,15 @@
 				9D69AE7E18577A2E00A5BED0 /* UIColor+ApplicationColors.m */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		9D69AE8018577DC800A5BED0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9D69AE551857760E00A5BED0 /* Main.storyboard */,
+				9D69AE5B1857760E00A5BED0 /* Images.xcassets */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
