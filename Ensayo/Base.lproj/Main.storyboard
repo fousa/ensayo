@@ -33,10 +33,73 @@
                         </prototypes>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="LWu-tE-A48"/>
+                    <connections>
+                        <segue destination="9hU-lg-Pos" kind="push" identifier="Placeholder" id="6fJ-Zm-uhO"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r2G-lV-fPe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="439" y="142"/>
+        </scene>
+        <!--Placeholder View Controller-->
+        <scene sceneID="eXo-Ip-2D6">
+            <objects>
+                <viewController id="9hU-lg-Pos" customClass="PlaceholderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gca-gN-c3N"/>
+                        <viewControllerLayoutGuide type="bottom" id="eWJ-M4-arF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q8b-ls-SV0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A normal UITextField with a coloured placeholder." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Rgy-q3-1nI">
+                                <rect key="frame" x="20" y="84" width="280" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="A text placeholder" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nYW-uF-88B">
+                                <rect key="frame" x="20" y="152" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A UITextField that is displayed inside a UISearchBar." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="7Jn-Kk-Nvn">
+                                <rect key="frame" x="20" y="202" width="280" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="redraw" placeholder="A search placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="ySm-Te-Eeb">
+                                <rect key="frame" x="20" y="270" width="280" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Rgy-q3-1nI" secondAttribute="trailing" constant="20" id="0ZQ-2R-72n"/>
+                            <constraint firstItem="7Jn-Kk-Nvn" firstAttribute="leading" secondItem="q8b-ls-SV0" secondAttribute="leading" constant="20" id="0ci-6a-6B2"/>
+                            <constraint firstItem="ySm-Te-Eeb" firstAttribute="top" secondItem="7Jn-Kk-Nvn" secondAttribute="bottom" constant="20" id="2R7-KJ-Yse"/>
+                            <constraint firstItem="ySm-Te-Eeb" firstAttribute="leading" secondItem="q8b-ls-SV0" secondAttribute="leading" constant="20" id="CtO-XC-IuK"/>
+                            <constraint firstItem="Rgy-q3-1nI" firstAttribute="top" secondItem="gca-gN-c3N" secondAttribute="bottom" constant="20" id="D1O-ER-fl7"/>
+                            <constraint firstAttribute="trailing" secondItem="nYW-uF-88B" secondAttribute="trailing" constant="20" id="EHB-A7-gBl"/>
+                            <constraint firstAttribute="trailing" secondItem="ySm-Te-Eeb" secondAttribute="trailing" constant="20" id="GXM-bf-Igz"/>
+                            <constraint firstAttribute="trailing" secondItem="7Jn-Kk-Nvn" secondAttribute="trailing" constant="20" id="Vfn-gF-SHk"/>
+                            <constraint firstItem="7Jn-Kk-Nvn" firstAttribute="top" secondItem="nYW-uF-88B" secondAttribute="bottom" constant="20" id="XS7-e8-4MZ"/>
+                            <constraint firstItem="nYW-uF-88B" firstAttribute="leading" secondItem="q8b-ls-SV0" secondAttribute="leading" constant="20" id="ZEj-Ox-ukX"/>
+                            <constraint firstItem="nYW-uF-88B" firstAttribute="top" secondItem="Rgy-q3-1nI" secondAttribute="bottom" constant="20" id="kAn-SO-H4J"/>
+                            <constraint firstItem="Rgy-q3-1nI" firstAttribute="leading" secondItem="q8b-ls-SV0" secondAttribute="leading" constant="20" id="yPZ-AG-fdc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="n2L-EQ-CmD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fFn-iw-pfL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1008" y="142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Avr-7R-38j">

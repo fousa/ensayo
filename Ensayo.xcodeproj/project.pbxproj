@@ -18,6 +18,8 @@
 		9D69AE5C1857760E00A5BED0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D69AE5B1857760E00A5BED0 /* Images.xcassets */; };
 		9D69AE7B185777C500A5BED0 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D69AE7A185777C500A5BED0 /* ListViewController.m */; };
 		9D69AE7F18577A2E00A5BED0 /* UIColor+ApplicationColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D69AE7E18577A2E00A5BED0 /* UIColor+ApplicationColors.m */; };
+		9D69AE83185796BD00A5BED0 /* PlaceholderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D69AE82185796BD00A5BED0 /* PlaceholderViewController.m */; };
+		9D69AE861857980D00A5BED0 /* UITextField+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D69AE851857980D00A5BED0 /* UITextField+Swizzle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,10 @@
 		9D69AE7A185777C500A5BED0 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		9D69AE7D18577A2E00A5BED0 /* UIColor+ApplicationColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ApplicationColors.h"; sourceTree = "<group>"; };
 		9D69AE7E18577A2E00A5BED0 /* UIColor+ApplicationColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ApplicationColors.m"; sourceTree = "<group>"; };
+		9D69AE81185796BD00A5BED0 /* PlaceholderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceholderViewController.h; sourceTree = "<group>"; };
+		9D69AE82185796BD00A5BED0 /* PlaceholderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceholderViewController.m; sourceTree = "<group>"; };
+		9D69AE841857980D00A5BED0 /* UITextField+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Swizzle.h"; sourceTree = "<group>"; };
+		9D69AE851857980D00A5BED0 /* UITextField+Swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Swizzle.m"; sourceTree = "<group>"; };
 		A484E52C26BC4D0AA7C1B94B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -116,6 +122,8 @@
 			children = (
 				9D69AE79185777C500A5BED0 /* ListViewController.h */,
 				9D69AE7A185777C500A5BED0 /* ListViewController.m */,
+				9D69AE81185796BD00A5BED0 /* PlaceholderViewController.h */,
+				9D69AE82185796BD00A5BED0 /* PlaceholderViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -125,6 +133,8 @@
 			children = (
 				9D69AE7D18577A2E00A5BED0 /* UIColor+ApplicationColors.h */,
 				9D69AE7E18577A2E00A5BED0 /* UIColor+ApplicationColors.m */,
+				9D69AE841857980D00A5BED0 /* UITextField+Swizzle.h */,
+				9D69AE851857980D00A5BED0 /* UITextField+Swizzle.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -239,8 +249,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D69AE7F18577A2E00A5BED0 /* UIColor+ApplicationColors.m in Sources */,
+				9D69AE83185796BD00A5BED0 /* PlaceholderViewController.m in Sources */,
 				9D69AE541857760E00A5BED0 /* AppDelegate.m in Sources */,
 				9D69AE501857760E00A5BED0 /* main.m in Sources */,
+				9D69AE861857980D00A5BED0 /* UITextField+Swizzle.m in Sources */,
 				9D69AE7B185777C500A5BED0 /* ListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

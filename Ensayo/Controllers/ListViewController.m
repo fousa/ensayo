@@ -23,7 +23,7 @@
     self.tableView.separatorColor = [UIColor ensayoGreenColor];
 
     _list = @{}.mutableCopy;
-    _list[NSLocalizedString(@"Placeholders", @"Placeholders")] = @"PlaceholderViewController";
+    _list[NSLocalizedString(@"Placeholders", @"Placeholders")] = @"Placeholder";
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -48,6 +48,13 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCell forIndexPath:indexPath];
     cell.textLabel.text = [self sortedListKeys][indexPath.row];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    NSString *key = [self sortedListKeys][indexPath.row];
+    [self performSegueWithIdentifier:_list[key] sender:nil];
 }
 
 @end
